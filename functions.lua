@@ -3,15 +3,15 @@ function move(o)
 	local ly=o.y
 
 	if btnp(➡️) then
-		if o.x==120 then
+		if o.x==120 then -- prevent moving through walls
 		else
 	 	o.x+=8
 	 	o.sprite=1
 	 	o.dir=➡️
 	 	end
 	end
-	if btnp(⬅️) then
-		if o.x==0 then
+	if btnp(⬅️) then 
+		if o.x==0 then 
 		else
 	 	o.x-=8
 	 	o.sprite=2
